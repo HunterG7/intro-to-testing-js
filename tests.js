@@ -30,4 +30,8 @@ describe('sayHello', function() {
     it('sayHello("Pat") should return "Hello ,Pat!', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return "Hello, World!" when called', function() {
+        expect(sayHello(true || false)).toBe("Hello, World!");
+    });
+
 });

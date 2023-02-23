@@ -3,7 +3,11 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-function sayHello(name){
-    return "Hello, " + name + "!";
+function sayHello(input){
+    if (input === true || input === false ) {
+        return "Hello, World!";
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
 
